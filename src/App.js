@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Character from "./components/characters";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <Character
+            name = {'Bart'}
+            info = {'fksdfldsjfsdfk l jlj llsaj ljdl jsld bskbfdk '}
+            photo = {'https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png'}
+        />
+        <Character
+            name = {'Homer'}
+            info = {'fksdfldsjfsdfk l jlj llsaj ljdl jsld bskbfdk '}
+            photo = {'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'}
+        />
+        <Character
+            name = {'Marge'}
+            info = {'fksdfldsjfsdfk l jlj llsaj ljdl jsld bskbfdk '}
+            photo = {'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'}
+        />
+        <Character
+            name = {'Liza'}
+            info = {'fksdfldsjfsdfk l jlj llsaj ljdl jsld bskbfdk '}
+            photo = {'https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png'}
+        />
+        <Character
+            name = {'Maggie'}
+            info = {'fksdfldsjfsdfk l jlj llsaj ljdl jsld bskbfdk '}
+            photo = {'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'}
+        />
+
+      </div>
   );
 }
 
