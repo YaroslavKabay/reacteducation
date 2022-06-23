@@ -9,7 +9,7 @@ function Character(props) {
             <p> {status}</p>
             <p>{species}</p>
             <p>{gender}</p>
-            <img src={photo} alt=""/>
+            <img src={photo} alt="photo"/>
         </div>
     );
 }
