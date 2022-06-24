@@ -1,33 +1,28 @@
 import {useEffect,useState} from "react";
-import User from "../components/user/User";
+import User from "../components/mission/Mission";
 
 export default function Posts(){
 
-    let [users, setUsers] = useState ([]);
-    let [user, setUser] = useState ({});
+    let [missions, setMissions] = useState ([]);
+    let [mission, setMission] = useState ({});
 
     useEffect(() => {
         fetch("https://api.spacexdata.com/v3/launches/")
             .then (value => value.json())
             .then(value => {
-                setUsers(value);
+                setMissions(value);
             })
 
     }, [])
 
-    const choseUser = (item) => {
-        setUser(item)
-    };
 
     return (
         <div>
-            { user && <div> {user.email} </div> }
-            <h2>Posts</h2>
-            {users.map(user =>
+            <h2>SpaceX Missions</h2>
+            {missions.filter(missions => missions.launch_year !== "2020").map(mission =>
                 <User
-                    key = {user.id}
-                    item={user}
-                    choseUser = {choseUser}
+                    key = {mission.flight_number}
+                    item={mission}
                 /> )}
 
         </div>);

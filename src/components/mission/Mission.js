@@ -1,13 +1,10 @@
-xport default function User({item,choseUser}){
+export default function Mission({item}){
 
     return (
-        <div> {item.id} {item.name}
+        <div> {item.mission_name} {item.launch_year} {item.links.mission_patch_small}
 
-            <button onClick={() => {
 
-                choseUser(item);
 
-            }}> Check email </button>
         </div>
     );
 
