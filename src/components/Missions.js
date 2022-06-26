@@ -4,7 +4,7 @@ import User from "../components/mission/Mission";
 export default function Posts(){
 
     let [missions, setMissions] = useState ([]);
-    let [mission, setMission] = useState ({});
+
 
     useEffect(() => {
         fetch("https://api.spacexdata.com/v3/launches/")
