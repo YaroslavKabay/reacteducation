@@ -1,5 +1,5 @@
 import {useEffect,useState} from "react";
-import User from "../components/user/User";
+import {User} from "../user";
 
 export default function Posts(){
 
