@@ -1,8 +1,23 @@
-import Users from "./components/users/Users"
+import {useState} from "react" ;
+import {Users,Posts} from "./components"
+import {getUserPosts} from "./services" ;
+
+
+
 function App() {
-  return (
+    let [posts,setPosts] = useState([])
+    const lift = (id)=> {
+        getUserPosts(id).then(({data}) =>{
+            setPosts ([...data])
+        })
+
+    }
+
+    return (
     <div >
-      <Users/>
+        <div>  <Users lift ={lift}/> </div>
+        <div>  <Posts posts={posts}/> </div>
+
     </div>
   );
 }

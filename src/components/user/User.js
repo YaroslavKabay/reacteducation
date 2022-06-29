@@ -1,7 +1,12 @@
-export default function User({item}){
+export default function User({item,lift}){
+const onclick = () => {
+    lift(item.id)
+}
+
   return (
       <div>
-        <h2> {item.id} - {item.name} </h2>
+         {item.id} - {item.name}
+          <button onClick={onclick}>Post</button>
       </div>
   );
 }
