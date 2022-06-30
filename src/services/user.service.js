@@ -1,4 +1,4 @@
-const CreateUser = () => {
+const createUser = (item) => {
 
     fetch("https://jsonplaceholder.typicode.com/users", {
         method: 'POST',
@@ -9,7 +9,7 @@ const CreateUser = () => {
     // .then(result => console.log(result));
 };
 
-export {CreateUser};
+export {createUser};
 
 
 

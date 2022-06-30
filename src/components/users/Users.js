@@ -1,5 +1,5 @@
 import {useForm} from "react-hook-form"
-import {CreateUser} from "../../services"
+import {createUser} from "../../services/"
 export default function Users(){
     let {register, handleSubmit,formState: {errors}} = useForm ({defaultValues:{
             name:'name',
@@ -8,7 +8,7 @@ export default function Users(){
 
 
     let submit = (item) => {
-        CreateUser(item).then(result => console.log(result))
+        createUser(item).then(result => console.log(result))
 
     }
 

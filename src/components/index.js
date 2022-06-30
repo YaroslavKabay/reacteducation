@@ -1,4 +1,4 @@
 export * from "./users/Users" ;
 export * from "./comments/Comments" ;
-export * from "./services/User.service" ;
-export * from "./services/Comments.service"
+export * from "./services/user.service" ;
+export * from "./services/comments.service"
