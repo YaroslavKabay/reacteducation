@@ -1,12 +1,11 @@
 const createUser = (item) => {
 
-    fetch("https://jsonplaceholder.typicode.com/users", {
+    return fetch("https://jsonplaceholder.typicode.com/users", {
         method: 'POST',
         body: JSON.stringify(item),
         headers: {'Content-type': 'application/json; charset=UTF-8'},
     })
         .then(response => response.json())
-    // .then(result => console.log(result));
 };
 
 export {createUser};

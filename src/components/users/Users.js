@@ -1,6 +1,7 @@
 import {useForm} from "react-hook-form"
 import {createUser} from "../../services/"
-export default function Users(){
+export function Users(){
+
     let {register, handleSubmit,formState: {errors}} = useForm ({defaultValues:{
             name:'name',
             username:'username',
@@ -11,8 +12,6 @@ export default function Users(){
         createUser(item).then(result => console.log(result))
 
     }
-
-
 
   return (
       <div>
