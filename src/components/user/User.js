@@ -6,7 +6,7 @@ const onclick = () => {
   return (
       <div>
          {item.id} - {item.name}
-          <button onClick={onclick}>Post</button>
+          <button onClick={onclick}>Post </button>
       </div>
   );
 }

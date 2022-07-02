@@ -8,5 +8,4 @@ const getUsers = () => axiosInstance.get()
 const getUserPosts = (id) => axiosInstance.get(`/${id}/posts`)
 
 
-
 export {getUsers,getUserPosts}
