@@ -1,4 +1,5 @@
 import {useEffect,useState} from "react";
+
 import User from "../components/mission/Mission";
 
 export default function Posts(){
