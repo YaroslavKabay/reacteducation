@@ -1,5 +1,4 @@
-import {Users} from "./components"
-import {Comments} from "./components"
+import {Comments,Users} from "./components"
 
 function App() {
 
