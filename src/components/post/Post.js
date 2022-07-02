@@ -5,4 +5,4 @@ export function Post({item}){
 
       </div>
   );
-}d
+}
