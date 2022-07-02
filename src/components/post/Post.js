@@ -1,7 +1,8 @@
-export default function Post(){
+export function Post({item}){
   return (
       <div>
-        Posts
+          {item.id} {item.body}
+
       </div>
   );
 }

@@ -1,6 +1,11 @@
+import {Post} from "../post"
+
 export function Posts({posts}){
   return (
       <div>
-          {posts.map(value => <div key={value.id}> {value.body} </div>)}
+          {posts.map(value =>
+              <Post key={value.id}
+                    item={value}
+              />)}
       </div>);
 }
