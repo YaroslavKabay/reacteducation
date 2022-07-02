@@ -9,4 +9,3 @@ export function Posts({posts}){
               />)}
       </div>);
 }
-s
