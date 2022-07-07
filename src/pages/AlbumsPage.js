@@ -1,6 +1,6 @@
-import AlbumsComponent from "../components/AlbumsComponent"
+import {AlbumsComponent} from "../components"
 
-export default function AlbumsPage(){
+export function AlbumsPage(){
     return (
         <div>
             <AlbumsComponent/>

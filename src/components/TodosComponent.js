@@ -1,16 +1,14 @@
 import {useEffect,useState} from "react"
 
 import TodoComponent from "./TodoComponent"
-import {getTodos} from "../services/todos.service"
+import {getTodos} from "../services"
 
-export default function TodosComponent(){
+export  function TodosComponent(){
     let [todos,setTodos] = useState([]);
 
     useEffect( () =>{
         getTodos.then((value)=> setTodos([...value]))
     },[]);
-
-
 
 
     return (

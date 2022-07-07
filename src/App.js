@@ -1,12 +1,6 @@
 import {Link,Routes,Route} from "react-router-dom" ;
 
-import TodosPage from "./pages/TodosPage";
-import AlbumsPage from "./pages/AlbumsPage";
-import CommentsPage from "./pages/CommentsPage";
-import PostsPage from "./pages/PostsPage"
-
-
-
+import {TodosPage, AlbumsPage, PostsPage,CommentsPage} from "./pages";
 
 function App() {
   return (

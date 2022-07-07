@@ -1,10 +1,10 @@
 import {useEffect,useState} from "react"
 import {Outlet} from "react-router-dom"
 
-import CommentComponent from "./CommentComponent"
-import {getComments} from "../services/comments.service"
+import {CommentComponent} from "../components"
+import {getComments} from "../services"
 
-export default function CommentsComponent(){
+export function CommentsComponent(){
     let [comments,setComments] = useState([]);
 
     useEffect( () =>{

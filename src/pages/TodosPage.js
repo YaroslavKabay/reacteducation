@@ -1,8 +1,8 @@
 import {Link} from "react-router-dom" ;
 
-import TodosComponent from "../components/TodosComponent"
+import {TodosComponent} from "../components"
 
-export default function TodosPage(){
+export function TodosPage(){
     return (
         <div>
             <TodosComponent/>

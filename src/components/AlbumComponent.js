@@ -1,4 +1,4 @@
-export default function AlbumComponent({album}){
+export function AlbumComponent({album}){
     return (
         <div>
             {album.title}
