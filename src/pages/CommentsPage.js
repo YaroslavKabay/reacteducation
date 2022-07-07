@@ -1,7 +1,13 @@
-export default function CommentsPage(){
+import CommentsComponent from "../components/CommentsComponent"
+
+import {Outlet} from "react-router-dom"
+
+export default function TodosPage(){
     return (
         <div>
-            CommentsPage
+            <CommentsComponent/>
+            <hr/>
+            <Outlet/>
         </div>
     );
 }
