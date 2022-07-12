@@ -1,8 +1,9 @@
 import React,{Component} from "react";
-import {PostApiService} from "../services/post.api.service";
-import Post from "./Post";
 
-class Posts extends Component{
+import {PostApiService} from "../services";
+import {Post} from "../components";
+
+export class Posts extends Component{
 
     state = {posts:[], x:'lallalal'};
     constructor(props) {
@@ -20,4 +21,3 @@ class Posts extends Component{
     }
 
 }
-export default Posts;

@@ -1,13 +1,14 @@
 import React,{Component} from "react";
-import Posts from "./components/Posts";
-import Comments from "./components/Comments"
+
+import {Comments,Posts} from "./components"
+
 class App extends Component{
 
   render() {
     return (
         <div>
-            {/*<Posts/>*/}
-            <Comments/>
+            <Posts/>
+            {/*<Comments/>*/}
 
         </div>
     );

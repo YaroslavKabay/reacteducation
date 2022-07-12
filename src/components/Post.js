@@ -1,6 +1,6 @@
 import React , {Component} from "react";
 
-class Post extends Component{
+export class Post extends Component{
 
     constructor(props,context) {
         super(props,context);
@@ -16,4 +16,3 @@ class Post extends Component{
     }
 
 }
-export default Post;

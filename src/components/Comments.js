@@ -1,8 +1,8 @@
 import React,{Component} from "react";
-import {CommentApiService} from "../services/comment.api.service";
-import Comment from "./Comment";
+import {CommentApiService} from "../services";
+import {Comment} from "../components";
 
-class Comments extends Component{
+export class Comments extends Component{
 
     state = {comments:[], x:'lala'};
     constructor(props) {
@@ -20,4 +20,3 @@ class Comments extends Component{
     }
 
 }
-export default Comments;

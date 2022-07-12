@@ -1,6 +1,6 @@
 import React , {Component} from "react";
 
-class Comment extends Component{
+export class Comment extends Component{
 
     constructor(props,context) {
         super(props,context);
@@ -16,4 +16,3 @@ class Comment extends Component{
     }
 
 }
-export default Comment;
