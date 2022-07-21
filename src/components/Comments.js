@@ -4,17 +4,21 @@ import {Comment} from "../components";
 
 export class Comments extends Component{
 
-    state = {comments:[], x:'lala'};
+    // state = {comments:[], x:'lala'};
     constructor(props) {
         super(props);
-        this.commentApiService= new CommentApiService();
-        this.commentApiService.getComments().then(value => this.setState({comments:value}));
+        this.state = {comments: []}
+
+    }
+
+    componentDidMount (){
+        CommentApiService.getAll().then(({data}) => this.setState({comments:data}) )
     }
 
     render() {
         return(
             <div>
-                {this.state.comments.map(value => <Comment key={value.id} item={value}></Comment>)}
+                {this.state.comments.map(value => <Comment key={value.id} item={value}/>)}
             </div>
         );
     }
