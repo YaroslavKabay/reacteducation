@@ -101,4 +101,5 @@ const user = {
 console.log(sum(1, 2));
 console.log(showSum(2, 3));
 console.log(incAge(user, 2));
+const random=1;
 
