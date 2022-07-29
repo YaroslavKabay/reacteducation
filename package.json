@@ -1,0 +1,23 @@
+{
+  "name": "reacteducation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "4.7.4",
+    "axios": "^0.27.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaroslavKabay/reacteducation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YaroslavKabay/reacteducation/issues"
+  },
+  "homepage": "https://github.com/YaroslavKabay/reacteducation#readme"
+}
