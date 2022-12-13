@@ -47,9 +47,6 @@ function App() {
               photo = {'https://rickandmortyapi.com/api/character/avatar/17.jpeg'}
           />
 
-
-
-
       </div>
   );
 }
