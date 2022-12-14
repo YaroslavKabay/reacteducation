@@ -4,8 +4,9 @@ import Post from '../post/Post';
 
 export default function Posts(){
 
-    let [posts, setPosts] = useState([]); // setPosts сетапає інфу з фетча в posts (setter,getter) . [] - default empty value
-    let [post, setPost] = useState([]);
+    let [posts, setPosts] = useState([]); // setPosts сетапає інфу з фетча в posts (setter,getter), posts  бере інфу завдяки сетеру
+    // [] - default empty value
+    let [post, setPost] = useState([]); // юз стейт загалом потрібен щоб змінювати змінні в межах розмітки (ретьорн), бо без цього розмітка не поміняється
 
     useEffect(() => {  // потрібен для того щоб юзстейт відпрацював лише раз а нерелоадився весь час (async)
         fetch('https://jsonplaceholder.typicode.com/posts')
@@ -13,7 +14,8 @@ export default function Posts(){
             .then(value => {
                 setPosts(value);
             });
-    },[]) // якщо ми хочемо щоб юзефект відпрацював один раз то нам треба цей пустий масив
+    },[]) // dependencies - якщо ми хочемо щоб юзефект відпрацював один раз то нам треба цей пустий масив, ми передаєм туди якусь змінну.
+    // Якщо змінна буде змінюватись, то юз ефект перезапуститься
 
     const chosePost = (item) => {
         setPost(item)
