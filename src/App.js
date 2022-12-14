@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       {x}
-    </div> //{x} - jsx
+    </div> //{x} - jsx, дужки дозволяють писати джс код в ретьрні
   );
 }
 
