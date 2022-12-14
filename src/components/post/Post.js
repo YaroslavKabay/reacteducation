@@ -1,4 +1,5 @@
 export default function Post({item,color, chosePost}){ // the same destructorization as let {item} = props; можна через кому деструкторизовувати і інші значення пропсів
+    // щоб деструктуризувати обєкт в обєкті з апі робим так Post({item,color, chosePost, lalla:{fromlalal}) і так до безкінечності
 
     return (
       <div
