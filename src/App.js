@@ -11,14 +11,12 @@ function App() {
         getUserPosts(id).then(({data}) =>{
             setPosts ([...data])
         })
-
     }
 
     return (
     <div >
         <div>  <Users lift ={lift}/> </div>
-        <div>  <Posts posts={posts}/> </div>
-
+        <div>  <Posts po sts={posts}/> </div>
     </div>
   );
 }

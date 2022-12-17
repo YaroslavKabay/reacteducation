@@ -5,7 +5,7 @@ const onclick = () => {
 
   return (
       <div>
-         {item.id} - {item.name}
+          {item.id} - {item.name}
           <button onClick={onclick}>Post </button>
       </div>
   );
