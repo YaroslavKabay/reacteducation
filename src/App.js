@@ -4,8 +4,8 @@ function App() {
 
 return (
     <div>
-        <Comments/>
-        {/*<Users/>*/}
+        {/*<Comments/>*/}
+        <Users/>
 
     </div>);
 }
