@@ -21,6 +21,7 @@ function App() {
               <Route path={'/comments'} element={<CommentsPage/>}>
 
                   <Route path={':id'} element={<PostsPage/>}/>
+                  {/*nested routes вкладені шляхи*/}
 
               </Route>
 
