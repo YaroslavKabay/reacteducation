@@ -2,9 +2,9 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 import {carService} from "../../services";
 
-const initialState = {
+const initialState = {// початковий стан слайсу
     cars: [],
-    carForUpdate: null,
+    carForUpdate: null, 
     errors: null
 };
 
@@ -64,11 +64,11 @@ const carSlice = createSlice({
     name: 'carSlice',
     initialState,
     reducers: {
-        setCarForUpdate: (state, action) => {
+        setCarForUpdate: (state, action) => { // стейт це інітіал стейт
             state.carForUpdate = action.payload
         }
-    },
-    extraReducers: (builder) =>
+    },// логіка слайсу
+    extraReducers: (builder) => // асинхронні методи з асинксанку
         builder
             .addCase(getAll.fulfilled, (state, action) => {
                 state.errors = null
@@ -88,7 +88,7 @@ const carSlice = createSlice({
                 state.cars.push(action.payload)
             })
             .addDefaultCase((state, action) => {
-                const [type] = action.type.split('/').splice(-1);
+                const [type] = action.type.split('/').splice(-1); // забирає останній елемент стрічки
                 if (type === 'rejected'){
                     state.errors = action.payload
                 }else {

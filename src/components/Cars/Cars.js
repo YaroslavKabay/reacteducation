@@ -5,11 +5,11 @@ import {Car} from "../Car/Car";
 import {carActions} from "../../redux";
 
 const Cars = () => {
-    const {cars} = useSelector(state => state.cars);
-    const dispatch = useDispatch();
+    const {cars} = useSelector(state => state.cars); // дістає шось зі стору(стейт це стор а стейткарс це редюсер а карс це інішнстейт)
+    const dispatch = useDispatch();// ceтає в стор карс
 
     useEffect(() => {
-        dispatch(carActions.getAll())
+        dispatch(carActions.getAll())//ceтає в стор карс
     }, [])
 
     return (
