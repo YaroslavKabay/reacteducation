@@ -64,7 +64,7 @@ const carSlice = createSlice({
     name: 'carSlice',
     initialState,
     reducers: {
-        setCarForUpdate: (state, action) => { // стейт це інітіал стейт
+        setCarForUpdate: (state, action) => { // стейт це інітіал стейт..
             state.carForUpdate = action.payload
         }
     },// логіка слайсу
