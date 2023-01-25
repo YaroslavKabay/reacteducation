@@ -1,17 +1,20 @@
-import { FC, useState, useEffect} from 'react';
+import { FC, useEffect} from 'react';
+
 import {ICar} from '../../interfaces'
-// import {
-//     useEffect
-// } from "../../../../../../../Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react";
 import { carService } from '../../services';
 import { Car } from '../Car/Car';
+import {useAppDispatch, useAppSelector } from '../../hooks';
+import {carActions } from '../../redux';
+
 
 const Cars: FC= () => {
-    const [cars, setCars] = useState<ICar[]>([])
+    // const [cars, setCars] = useState<ICar[]>([])
+    const{cars}= useAppSelector(state => state.cars)
+    const dispatch = useAppDispatch()
 
     useEffect(()=>{
-        carService.getAll().then(({data})=>setCars(data))
-    },[])
+        dispatch(carActions.getAll())
+    },[dispatch])
 
     return (
         <div>
